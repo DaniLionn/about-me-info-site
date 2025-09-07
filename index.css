@@ -1,0 +1,45 @@
+.layout {
+  width: 100%;
+
+  display: grid;
+  grid:
+    "sidebar body" 1fr
+    / auto 1fr;
+  gap: 8px;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  outline-style: ridge;
+}
+.body {
+  grid-area: body;
+  outline-style: ridge;
+}
+
+.rotating-image {
+  width: 128; /* Adjust as needed */
+  height: 128;
+  animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.h2 {
+  font-family: Arial, Helvetica, sans-serif;
+}
