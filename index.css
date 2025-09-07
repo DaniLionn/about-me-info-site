@@ -12,13 +12,13 @@
   grid-area: sidebar;
   outline-style: ridge;
   outline-color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.75);
 }
 .body {
   grid-area: body;
   outline-style: ridge;
   outline-color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.75);
 }
 
 .rotating-image {
@@ -50,4 +50,10 @@ div {
 }
 .steamgames-iframe {
   width: 99%;
+}
+.messenger {
+  border-style: ridge;
+  border-color: #ffffff;
+  background-color: rgb(219, 219, 219);
+  margin: 5px 5px 5px 5px;
 }
