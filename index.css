@@ -10,13 +10,13 @@
 
 .sidebar {
   grid-area: sidebar;
-  outline-style: ridge;
+  outline-style: outset;
   outline-color: rgb(194, 137, 94);
   background-color: rgba(194, 137, 94, 0.75);
 }
 .body {
   grid-area: body;
-  outline-style: ridge;
+  outline-style: outset;
   outline-color: rgb(194, 137, 94);
   background-color: rgba(194, 137, 94, 0.75);
 }
@@ -50,11 +50,13 @@ div {
 }
 .steamgames-iframe {
   width: 99%;
+    border-style: inset;
+  border-color: rgb(194, 137, 94);
 }
 .messenger {
   border-style: inset;
   border-color: rgb(194, 137, 94);;
-  background-color: rgb(161, 114, 78);
+  background-color: rgb(255,255,255);
   margin: 5px 5px 5px 5px;
 }
 
