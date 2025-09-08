@@ -11,14 +11,14 @@
 .sidebar {
   grid-area: sidebar;
   outline-style: ridge;
-  outline-color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.75);
+  outline-color: rgb(194, 137, 94);
+  background-color: rgba(194, 137, 94, 0.75);
 }
 .body {
   grid-area: body;
   outline-style: ridge;
-  outline-color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.75);
+  outline-color: rgb(194, 137, 94);
+  background-color: rgba(194, 137, 94, 0.75);
 }
 
 .rotating-image {
@@ -42,7 +42,7 @@
 }
 
 body {
-  background-image: url(https://background-tiles.com/overview/mixed-colors/patterns/large/1054.png);
+    background-image: url(https://background-tiles.com/overview/mixed-colors/patterns/large/1053.png);
 }
 
 div {
@@ -52,8 +52,9 @@ div {
   width: 99%;
 }
 .messenger {
-  border-style: ridge;
-  border-color: #ffffff;
-  background-color: rgb(219, 219, 219);
+  border-style: inset;
+  border-color: rgb(194, 137, 94);;
+  background-color: rgb(161, 114, 78);
   margin: 5px 5px 5px 5px;
 }
+
