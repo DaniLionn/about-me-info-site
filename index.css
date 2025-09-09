@@ -30,12 +30,32 @@
   animation: rotate 15s linear infinite;
 }
 
+.swinging-image {
+  width: 128; /* Adjust as needed */
+  height: 128;
+  margin: 15px 15px 15px 15px;
+  animation: swing 1.5s cubic-bezier(0.77, 0, 0.18, 1) infinite;
+}
+
 @keyframes rotate {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(-45deg);
+  }
+
+  100% {
+    transform: rotate(45deg);
   }
 }
 @font-face {
@@ -58,9 +78,8 @@ div {
 }
 .messenger {
   border-style: inset;
-  border-color: rgb(194, 137, 94);;
-  background-color: rgb(255,255,255);
+  border-color: rgb(194, 137, 94);
+  background-color: rgb(255, 255, 255);
   margin: 5px 5px 5px 5px;
   border-width: 3px;
 }
-
