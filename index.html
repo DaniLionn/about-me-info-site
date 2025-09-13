@@ -8,6 +8,13 @@
         var audio = document.getElementById("audio");
         audio.play();
       }
+
+      function onChange(value) {
+        var iframe = document.getElementById("steamgames-iframe");
+        iframe.src =
+          "https://prideislandapi.onrender.com/website/steamgames?sort=" +
+          value;
+      }
     </script>
     <audio
       id="audio"
@@ -87,9 +94,19 @@
             Here's the games I own on steam lol (hover over an image to show
             info about the game!)
           </p>
+          <form>
+            <label for="sort">Sorting method</label>
+            <select name="sort" id="sort" onchange="onChange(this.value)">
+              <option value="name">Alphabetical</option>
+              <option value="default">Default</option>
+              <option value="playtime">Playtime</option>
+            </select>
+            <br /><br />
+          </form>
           <iframe
             src="https://prideislandapi.onrender.com/website/steamgames"
             class="steamgames-iframe"
+            id="steamgames-iframe"
           ></iframe>
         </div>
         <p>Here&#39;s some of my skills in coding stuff!</p>

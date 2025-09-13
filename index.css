@@ -24,14 +24,14 @@
 }
 
 .rotating-image {
-  width: 128; /* Adjust as needed */
+  width: 128;
   height: 128;
   margin: 15px 15px 15px 15px;
   animation: rotate 15s linear infinite;
 }
 
 .swinging-image {
-  width: 128; /* Adjust as needed */
+  width: 128;
   height: 128;
   margin: 15px 15px 15px 15px;
   animation: swing 1.5s cubic-bezier(0.77, 0, 0.18, 1) infinite;
