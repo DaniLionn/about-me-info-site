@@ -5,7 +5,12 @@
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
     <script>
       function play() {
+        function randomNumber(min, max) {
+          return Math.random() * (max - min) + min;
+        }
+
         var audio = document.getElementById("audio");
+        audio.playbackRate = randomNumber(0.5, 1.5);
         audio.play();
       }
 
@@ -133,4 +138,3 @@
     </section>
   </body>
 </html>
-
