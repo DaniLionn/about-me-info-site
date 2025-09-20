@@ -3,28 +3,16 @@
   <head>
     <link rel="stylesheet" href="index.css" />
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
-    <script>
-      function play() {
-        function randomNumber(min, max) {
-          return Math.random() * (max - min) + min;
-        }
-
-        var audio = document.getElementById("audio");
-        audio.playbackRate = randomNumber(0.5, 1.5);
-        audio.play();
-      }
-
-      function onChange(value) {
-        var iframe = document.getElementById("steamgames-iframe");
-        iframe.src =
-          "https://prideislandapi.onrender.com/website/steamgames?sort=" +
-          value;
-      }
-    </script>
+    <script></script>
     <audio
-      id="audio"
-      src="https://danilionn.github.io/about-me-info-site/assets/audio/pikmin.mp3"
+      id="pikmin-voice"
+      src="https://danilionn.github.io/about-me-info-site/assets/audio/pikmin-voice.mp3"
     ></audio>
+    <script src="assets/scripts/play-audio.js" type="text/javascript"></script>
+    <script
+      src="assets/scripts/steam-sort-method.js"
+      type="text/javascript"
+    ></script>
     <title>Daniella's Site</title>
   </head>
   <body>
@@ -50,7 +38,7 @@
         <img
           class="swinging-image pikcursor"
           src="./assets/images/pikmin.png"
-          onclick="play('assets/sounds/pikmin.mp3')"
+          onclick="playSound('pikmin-voice', true)"
           width="128px"
           height="128px"
           style="float: middle"
@@ -101,7 +89,7 @@
           </p>
           <form>
             <label for="sort">Sorting method</label>
-            <select name="sort" id="sort" onchange="onChange(this.value)">
+            <select name="sort" id="sort" onchange="sortMethod(this.value)">
               <option value="name">Alphabetical</option>
               <option value="playtime">Playtime</option>
             </select>
