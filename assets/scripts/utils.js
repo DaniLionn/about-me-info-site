@@ -24,3 +24,24 @@ function sortMethod(sortType) {
     "https://dani-backend-apis.onrender.com/website/steamgames?sort=" +
     sortType;
 }
+
+function randomPikminSound() {
+
+  const random = Math.random()
+
+  switch (random) {
+    case random <= 0.25:
+      playSound("rockpikmin1", true);
+      return
+    case random > 0.25 &&  random <= 0.5:
+      playSound("rockpikmin2", true);
+      return;
+    case random > 0.5 &&  random <= 0.75:
+      playSound("rockpikmin3", true);
+      return;
+    case random > 0.75:
+      playSound("rockpikmin4", true);
+      return;
+  }
+
+}
