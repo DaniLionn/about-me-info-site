@@ -29,19 +29,20 @@ function randomPikminSound() {
 
   const random = Math.random()
 
-  switch (random) {
-    case random <= 0.25:
-      playSound("rockpikmin1", true);
-      return
-    case random > 0.25 &&  random <= 0.5:
-      playSound("rockpikmin2", true);
-      return;
-    case random > 0.5 &&  random <= 0.75:
-      playSound("rockpikmin3", true);
-      return;
-    case random > 0.75:
-      playSound("rockpikmin4", true);
-      return;
-  }
+    if (random <= 0.25) {
+        playSound("rockPikmin1", true)
+    }
+
+    if (random > 0.25 && random <= 0.5) {
+        playSound("rockPikmin2", true)
+    }
+
+    if (random > 0.5 && random <= 0.75) {
+        playSound("rockPikmin3", true)
+    }
+
+    if (random > 0.75) {
+        playSound("rockPikmin4", true)
+    }
 
 }
